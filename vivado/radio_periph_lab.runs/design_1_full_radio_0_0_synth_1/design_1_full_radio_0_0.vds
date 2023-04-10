@@ -1,0 +1,705 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Apr 10 01:18:28 2023
+# Process ID: 13668
+# Current directory: C:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1
+# Command line: vivado.exe -log design_1_full_radio_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_full_radio_0_0.tcl
+# Log file: C:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/design_1_full_radio_0_0.vds
+# Journal file: C:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1\vivado.jou
+# Running On: MasterPC, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 8, Host memory: 34274 MB
+#-----------------------------------------------------------
+source design_1_full_radio_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/zybo_project/Lab6/radio_periph_lab/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+Command: synth_design -top design_1_full_radio_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 22420
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1631.043 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_full_radio_0_0' [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/synth/design_1_full_radio_0_0.vhd:84]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'full_radio_v1_0' declared at 'c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/00d5/hdl/full_radio_v1_0.vhd:5' bound to instance 'U0' of component 'full_radio_v1_0' [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/synth/design_1_full_radio_0_0.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'full_radio_v1_0' [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/00d5/hdl/full_radio_v1_0.vhd:50]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'full_radio_v1_0_S00_AXI' declared at 'c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/00d5/hdl/full_radio_v1_0_S00_AXI.vhd:5' bound to instance 'full_radio_v1_0_S00_AXI_inst' of component 'full_radio_v1_0_S00_AXI' [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/00d5/hdl/full_radio_v1_0.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'full_radio_v1_0_S00_AXI' [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/00d5/hdl/full_radio_v1_0_S00_AXI.vhd:87]
+INFO: [Synth 8-226] default block is never used [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/00d5/hdl/full_radio_v1_0_S00_AXI.vhd:287]
+INFO: [Synth 8-226] default block is never used [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/00d5/hdl/full_radio_v1_0_S00_AXI.vhd:418]
+INFO: [Synth 8-3491] module 'dds_compiler_0' declared at 'c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:59' bound to instance 'uut_freq' of component 'dds_compiler_0' [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/00d5/hdl/full_radio_v1_0_S00_AXI.vhd:454]
+INFO: [Synth 8-638] synthesizing module 'dds_compiler_0' [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:72]
+WARNING: [Synth 8-5640] Port 'debug_axi_pinc_in' is missing in component declaration [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:75]
+WARNING: [Synth 8-5640] Port 'debug_axi_poff_in' is missing in component declaration [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:75]
+WARNING: [Synth 8-5640] Port 'debug_axi_resync_in' is missing in component declaration [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:75]
+WARNING: [Synth 8-5640] Port 'debug_axi_chan_in' is missing in component declaration [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:75]
+WARNING: [Synth 8-5640] Port 'debug_core_nd' is missing in component declaration [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:75]
+WARNING: [Synth 8-5640] Port 'debug_phase' is missing in component declaration [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:75]
+WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaration [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:75]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_MODE_OF_OPERATION bound to: 0 - type: integer 
+	Parameter C_MODULUS bound to: 9 - type: integer 
+	Parameter C_ACCUMULATOR_WIDTH bound to: 27 - type: integer 
+	Parameter C_CHANNELS bound to: 1 - type: integer 
+	Parameter C_HAS_PHASE_OUT bound to: 1 - type: integer 
+	Parameter C_HAS_PHASEGEN bound to: 1 - type: integer 
+	Parameter C_HAS_SINCOS bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 8 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_NEGATIVE_COSINE bound to: 0 - type: integer 
+	Parameter C_NEGATIVE_SINE bound to: 0 - type: integer 
+	Parameter C_NOISE_SHAPING bound to: 2 - type: integer 
+	Parameter C_OUTPUTS_REQUIRED bound to: 0 - type: integer 
+	Parameter C_OUTPUT_FORM bound to: 0 - type: integer 
+	Parameter C_OUTPUT_WIDTH bound to: 16 - type: integer 
+	Parameter C_PHASE_ANGLE_WIDTH bound to: 11 - type: integer 
+	Parameter C_PHASE_INCREMENT bound to: 3 - type: integer 
+	Parameter C_PHASE_INCREMENT_VALUE bound to: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_RESYNC bound to: 0 - type: integer 
+	Parameter C_PHASE_OFFSET bound to: 0 - type: integer 
+	Parameter C_PHASE_OFFSET_VALUE bound to: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_OPTIMISE_GOAL bound to: 0 - type: integer 
+	Parameter C_USE_DSP48 bound to: 0 - type: integer 
+	Parameter C_POR_MODE bound to: 0 - type: integer 
+	Parameter C_AMPLITUDE bound to: 1 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 1 - type: integer 
+	Parameter C_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_HAS_S_PHASE bound to: 1 - type: integer 
+	Parameter C_S_PHASE_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_S_CONFIG bound to: 0 - type: integer 
+	Parameter C_S_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_S_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_M_DATA bound to: 1 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_M_PHASE bound to: 1 - type: integer 
+	Parameter C_M_PHASE_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_CHAN_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dds_compiler_v6_0_22' declared at 'c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:47308' bound to instance 'U0' of component 'dds_compiler_v6_0_22' [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:182]
+INFO: [Synth 8-256] done synthesizing module 'dds_compiler_0' (0#1) [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:72]
+INFO: [Synth 8-3491] module 'dds_tuner' declared at 'c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_tuner/synth/dds_tuner.vhd:59' bound to instance 'uut_tuner' of component 'dds_tuner' [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/00d5/hdl/full_radio_v1_0_S00_AXI.vhd:466]
+INFO: [Synth 8-638] synthesizing module 'dds_tuner' [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_tuner/synth/dds_tuner.vhd:72]
+WARNING: [Synth 8-5640] Port 'debug_axi_pinc_in' is missing in component declaration [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_tuner/synth/dds_tuner.vhd:75]
+WARNING: [Synth 8-5640] Port 'debug_axi_poff_in' is missing in component declaration [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_tuner/synth/dds_tuner.vhd:75]
+WARNING: [Synth 8-5640] Port 'debug_axi_resync_in' is missing in component declaration [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_tuner/synth/dds_tuner.vhd:75]
+WARNING: [Synth 8-5640] Port 'debug_axi_chan_in' is missing in component declaration [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_tuner/synth/dds_tuner.vhd:75]
+WARNING: [Synth 8-5640] Port 'debug_core_nd' is missing in component declaration [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_tuner/synth/dds_tuner.vhd:75]
+WARNING: [Synth 8-5640] Port 'debug_phase' is missing in component declaration [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_tuner/synth/dds_tuner.vhd:75]
+WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaration [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_tuner/synth/dds_tuner.vhd:75]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_MODE_OF_OPERATION bound to: 0 - type: integer 
+	Parameter C_MODULUS bound to: 9 - type: integer 
+	Parameter C_ACCUMULATOR_WIDTH bound to: 27 - type: integer 
+	Parameter C_CHANNELS bound to: 1 - type: integer 
+	Parameter C_HAS_PHASE_OUT bound to: 1 - type: integer 
+	Parameter C_HAS_PHASEGEN bound to: 1 - type: integer 
+	Parameter C_HAS_SINCOS bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 8 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_NEGATIVE_COSINE bound to: 0 - type: integer 
+	Parameter C_NEGATIVE_SINE bound to: 0 - type: integer 
+	Parameter C_NOISE_SHAPING bound to: 2 - type: integer 
+	Parameter C_OUTPUTS_REQUIRED bound to: 2 - type: integer 
+	Parameter C_OUTPUT_FORM bound to: 0 - type: integer 
+	Parameter C_OUTPUT_WIDTH bound to: 16 - type: integer 
+	Parameter C_PHASE_ANGLE_WIDTH bound to: 11 - type: integer 
+	Parameter C_PHASE_INCREMENT bound to: 3 - type: integer 
+	Parameter C_PHASE_INCREMENT_VALUE bound to: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_RESYNC bound to: 0 - type: integer 
+	Parameter C_PHASE_OFFSET bound to: 0 - type: integer 
+	Parameter C_PHASE_OFFSET_VALUE bound to: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_OPTIMISE_GOAL bound to: 0 - type: integer 
+	Parameter C_USE_DSP48 bound to: 0 - type: integer 
+	Parameter C_POR_MODE bound to: 0 - type: integer 
+	Parameter C_AMPLITUDE bound to: 1 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 1 - type: integer 
+	Parameter C_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_HAS_S_PHASE bound to: 1 - type: integer 
+	Parameter C_S_PHASE_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_S_CONFIG bound to: 0 - type: integer 
+	Parameter C_S_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_S_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_M_DATA bound to: 1 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_M_PHASE bound to: 1 - type: integer 
+	Parameter C_M_PHASE_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_CHAN_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dds_compiler_v6_0_22' declared at 'c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:47308' bound to instance 'U0' of component 'dds_compiler_v6_0_22' [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_tuner/synth/dds_tuner.vhd:182]
+INFO: [Synth 8-256] done synthesizing module 'dds_tuner' (0#1) [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_tuner/synth/dds_tuner.vhd:72]
+INFO: [Synth 8-3491] module 'cmpy_0' declared at 'c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/cmpy_0/synth/cmpy_0.vhd:59' bound to instance 'uut_mixer' of component 'cmpy_0' [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/00d5/hdl/full_radio_v1_0_S00_AXI.vhd:477]
+INFO: [Synth 8-638] synthesizing module 'cmpy_0' [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/cmpy_0/synth/cmpy_0.vhd:71]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_XDEVICE bound to: xc7z020 - type: string 
+	Parameter C_A_WIDTH bound to: 16 - type: integer 
+	Parameter C_B_WIDTH bound to: 16 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 16 - type: integer 
+	Parameter C_LATENCY bound to: 6 - type: integer 
+	Parameter C_MULT_TYPE bound to: 1 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 0 - type: integer 
+	Parameter HAS_NEGATE bound to: 0 - type: integer 
+	Parameter SINGLE_OUTPUT bound to: 0 - type: integer 
+	Parameter ROUND bound to: 0 - type: integer 
+	Parameter USE_DSP_CASCADES bound to: 1 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_CTRL_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_CTRL_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_S_AXIS_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXIS_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXIS_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_CTRL_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_S_AXIS_CTRL_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXIS_DOUT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_DOUT_TUSER_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'cmpy_v6_0_21' declared at 'c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/cmpy_0/hdl/cmpy_v6_0_vh_rfs.vhd:13916' bound to instance 'U0' of component 'cmpy_v6_0_21' [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/cmpy_0/synth/cmpy_0.vhd:155]
+INFO: [Synth 8-256] done synthesizing module 'cmpy_0' (0#1) [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/cmpy_0/synth/cmpy_0.vhd:71]
+INFO: [Synth 8-3491] module 'fir' declared at 'c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/Users/Khai/AppData/Roaming/Xilinx/Vivado/-force/fir.vhd:5' bound to instance 'uut_fir_real' of component 'fir' [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/00d5/hdl/full_radio_v1_0_S00_AXI.vhd:488]
+INFO: [Synth 8-638] synthesizing module 'fir' [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/Users/Khai/AppData/Roaming/Xilinx/Vivado/-force/fir.vhd:15]
+INFO: [Synth 8-3491] module 'fir_1' declared at 'c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_1/synth/fir_1.vhd:59' bound to instance 'uut_fir_1' of component 'fir_1' [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/Users/Khai/AppData/Roaming/Xilinx/Vivado/-force/fir.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'fir_1' [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_1/synth/fir_1.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_COMPONENT_NAME bound to: fir_1 - type: string 
+	Parameter C_COEF_FILE bound to: fir_1.mif - type: string 
+	Parameter C_COEF_FILE_LINES bound to: 120 - type: integer 
+	Parameter C_FILTER_TYPE bound to: 1 - type: integer 
+	Parameter C_INTERP_RATE bound to: 1 - type: integer 
+	Parameter C_DECIM_RATE bound to: 40 - type: integer 
+	Parameter C_ZERO_PACKING_FACTOR bound to: 1 - type: integer 
+	Parameter C_SYMMETRY bound to: 1 - type: integer 
+	Parameter C_NUM_FILTS bound to: 1 - type: integer 
+	Parameter C_NUM_TAPS bound to: 177 - type: integer 
+	Parameter C_NUM_CHANNELS bound to: 1 - type: integer 
+	Parameter C_CHANNEL_PATTERN bound to: fixed - type: string 
+	Parameter C_ROUND_MODE bound to: 0 - type: integer 
+	Parameter C_COEF_RELOAD bound to: 0 - type: integer 
+	Parameter C_NUM_RELOAD_SLOTS bound to: 1 - type: integer 
+	Parameter C_COL_MODE bound to: 1 - type: integer 
+	Parameter C_COL_PIPE_LEN bound to: 4 - type: integer 
+	Parameter C_COL_CONFIG bound to: 3 - type: string 
+	Parameter C_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_DATA_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_IP_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_PX_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_COEF_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_COEF_WIDTH bound to: 16 - type: integer 
+	Parameter C_DATA_PATH_SRC bound to: 0 - type: string 
+	Parameter C_COEF_PATH_SRC bound to: 0 - type: string 
+	Parameter C_PX_PATH_SRC bound to: 0 - type: string 
+	Parameter C_DATA_PATH_SIGN bound to: 0 - type: string 
+	Parameter C_COEF_PATH_SIGN bound to: 0 - type: string 
+	Parameter C_ACCUM_PATH_WIDTHS bound to: 37 - type: string 
+	Parameter C_OUTPUT_WIDTH bound to: 37 - type: integer 
+	Parameter C_OUTPUT_PATH_WIDTHS bound to: 37 - type: string 
+	Parameter C_ACCUM_OP_PATH_WIDTHS bound to: 37 - type: string 
+	Parameter C_EXT_MULT_CNFG bound to: none - type: string 
+	Parameter C_DATA_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_OP_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_NUM_MADDS bound to: 3 - type: integer 
+	Parameter C_OPT_MADDS bound to: none - type: string 
+	Parameter C_OVERSAMPLING_RATE bound to: 1 - type: integer 
+	Parameter C_INPUT_RATE bound to: 1 - type: integer 
+	Parameter C_OUTPUT_RATE bound to: 40 - type: integer 
+	Parameter C_DATA_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_COEF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_IPBUFF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_OPBUFF_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_DATAPATH_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_MEM_ARRANGEMENT bound to: 1 - type: integer 
+	Parameter C_DATA_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_COEF_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_FILTS_PACKED bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 10 - type: integer 
+	Parameter C_HAS_ARESETn bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_DATA_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_S_DATA_HAS_FIFO bound to: 1 - type: integer 
+	Parameter C_S_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_DATA_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_DATA_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 40 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_CONFIG_CHANNEL bound to: 0 - type: integer 
+	Parameter C_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_CONFIG_PACKET_SIZE bound to: 0 - type: integer 
+	Parameter C_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_RELOAD_TDATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'fir_compiler_v7_2_18' declared at 'c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_1/hdl/fir_compiler_v7_2_vh_rfs.vhd:67113' bound to instance 'U0' of component 'fir_compiler_v7_2_18' [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_1/synth/fir_1.vhd:198]
+INFO: [Synth 8-256] done synthesizing module 'fir_1' (0#1) [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_1/synth/fir_1.vhd:70]
+INFO: [Synth 8-3491] module 'fir_2' declared at 'c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_2/synth/fir_2.vhd:59' bound to instance 'uut_fir_2' of component 'fir_2' [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/Users/Khai/AppData/Roaming/Xilinx/Vivado/-force/fir.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'fir_2' [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_2/synth/fir_2.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_COMPONENT_NAME bound to: fir_2 - type: string 
+	Parameter C_COEF_FILE bound to: fir_2.mif - type: string 
+	Parameter C_COEF_FILE_LINES bound to: 384 - type: integer 
+	Parameter C_FILTER_TYPE bound to: 1 - type: integer 
+	Parameter C_INTERP_RATE bound to: 1 - type: integer 
+	Parameter C_DECIM_RATE bound to: 64 - type: integer 
+	Parameter C_ZERO_PACKING_FACTOR bound to: 1 - type: integer 
+	Parameter C_SYMMETRY bound to: 1 - type: integer 
+	Parameter C_NUM_FILTS bound to: 1 - type: integer 
+	Parameter C_NUM_TAPS bound to: 724 - type: integer 
+	Parameter C_NUM_CHANNELS bound to: 1 - type: integer 
+	Parameter C_CHANNEL_PATTERN bound to: fixed - type: string 
+	Parameter C_ROUND_MODE bound to: 1 - type: integer 
+	Parameter C_COEF_RELOAD bound to: 0 - type: integer 
+	Parameter C_NUM_RELOAD_SLOTS bound to: 1 - type: integer 
+	Parameter C_COL_MODE bound to: 1 - type: integer 
+	Parameter C_COL_PIPE_LEN bound to: 4 - type: integer 
+	Parameter C_COL_CONFIG bound to: 1 - type: string 
+	Parameter C_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_DATA_PATH_WIDTHS bound to: 18,19 - type: string 
+	Parameter C_DATA_IP_PATH_WIDTHS bound to: 37 - type: string 
+	Parameter C_DATA_PX_PATH_WIDTHS bound to: 37 - type: string 
+	Parameter C_DATA_WIDTH bound to: 37 - type: integer 
+	Parameter C_COEF_PATH_WIDTHS bound to: 16,16 - type: string 
+	Parameter C_COEF_WIDTH bound to: 16 - type: integer 
+	Parameter C_DATA_PATH_SRC bound to: 0,1 - type: string 
+	Parameter C_COEF_PATH_SRC bound to: 0,0 - type: string 
+	Parameter C_PX_PATH_SRC bound to: 0,1 - type: string 
+	Parameter C_DATA_PATH_SIGN bound to: 1,0 - type: string 
+	Parameter C_COEF_PATH_SIGN bound to: 0,0 - type: string 
+	Parameter C_ACCUM_PATH_WIDTHS bound to: 41,41 - type: string 
+	Parameter C_OUTPUT_WIDTH bound to: 30 - type: integer 
+	Parameter C_OUTPUT_PATH_WIDTHS bound to: 30 - type: string 
+	Parameter C_ACCUM_OP_PATH_WIDTHS bound to: 59 - type: string 
+	Parameter C_EXT_MULT_CNFG bound to: 0,1,0,18 - type: string 
+	Parameter C_DATA_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_OP_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_NUM_MADDS bound to: 1 - type: integer 
+	Parameter C_OPT_MADDS bound to: none - type: string 
+	Parameter C_OVERSAMPLING_RATE bound to: 6 - type: integer 
+	Parameter C_INPUT_RATE bound to: 40 - type: integer 
+	Parameter C_OUTPUT_RATE bound to: 2560 - type: integer 
+	Parameter C_DATA_MEMTYPE bound to: 1 - type: integer 
+	Parameter C_COEF_MEMTYPE bound to: 1 - type: integer 
+	Parameter C_IPBUFF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_OPBUFF_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_DATAPATH_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_MEM_ARRANGEMENT bound to: 1 - type: integer 
+	Parameter C_DATA_MEM_PACKING bound to: 1 - type: integer 
+	Parameter C_COEF_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_FILTS_PACKED bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 17 - type: integer 
+	Parameter C_HAS_ARESETn bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_DATA_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_S_DATA_HAS_FIFO bound to: 1 - type: integer 
+	Parameter C_S_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_DATA_TDATA_WIDTH bound to: 40 - type: integer 
+	Parameter C_S_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_DATA_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_CONFIG_CHANNEL bound to: 0 - type: integer 
+	Parameter C_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_CONFIG_PACKET_SIZE bound to: 0 - type: integer 
+	Parameter C_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_RELOAD_TDATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'fir_compiler_v7_2_18' declared at 'c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_1/hdl/fir_compiler_v7_2_vh_rfs.vhd:67113' bound to instance 'U0' of component 'fir_compiler_v7_2_18' [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_2/synth/fir_2.vhd:198]
+INFO: [Synth 8-256] done synthesizing module 'fir_2' (0#1) [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_2/synth/fir_2.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'fir' (0#1) [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/Users/Khai/AppData/Roaming/Xilinx/Vivado/-force/fir.vhd:15]
+INFO: [Synth 8-3491] module 'fir' declared at 'c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/Users/Khai/AppData/Roaming/Xilinx/Vivado/-force/fir.vhd:5' bound to instance 'uut_fir_imag' of component 'fir' [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/00d5/hdl/full_radio_v1_0_S00_AXI.vhd:496]
+INFO: [Synth 8-256] done synthesizing module 'full_radio_v1_0_S00_AXI' (0#1) [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/00d5/hdl/full_radio_v1_0_S00_AXI.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'full_radio_v1_0' (0#1) [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/00d5/hdl/full_radio_v1_0.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'design_1_full_radio_0_0' (0#1) [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/synth/design_1_full_radio_0_0.vhd:84]
+WARNING: [Synth 8-5858] RAM p_path_out_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  p_path_out_reg 
+WARNING: [Synth 8-5858] RAM p_path_out_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  p_path_out_reg 
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/00d5/hdl/full_radio_v1_0_S00_AXI.vhd:283]
+WARNING: [Synth 8-7129] Port SCLR in module delay__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR_ALT in module delay__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay__parameterized42 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR_ALT in module delay__parameterized42 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WE in module delay__parameterized20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay__parameterized20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay__parameterized20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR_ALT in module delay__parameterized20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay__parameterized20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WE in module delay__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR_ALT in module delay__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRE_ADDSUB in module calc__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRE_ADD_BYPASS in module calc__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CED in module calc__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WE in module delay__parameterized41 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay__parameterized41 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay__parameterized41 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR_ALT in module delay__parameterized41 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay__parameterized41 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][57] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][56] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][55] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][54] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][53] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][52] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][51] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][50] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][49] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][48] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][62] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][61] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][60] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][59] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][58] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][57] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][56] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][55] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][54] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][53] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][52] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][51] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][50] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][49] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][48] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][57] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][56] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][55] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][54] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][53] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][52] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][51] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][50] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][49] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][48] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][47] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][46] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][45] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][44] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][43] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][42] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][41] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][40] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][39] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][38] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][37] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][36] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][35] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][34] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][33] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][32] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][31] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][30] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][29] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][28] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][27] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][26] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][25] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][24] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][23] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][22] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][21] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][20] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][19] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][18] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][17] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][16] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][15] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][14] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][13] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][12] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][11] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][10] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][9] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][8] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][7] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][6] in module add_accum__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][5] in module add_accum__parameterized0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2303.176 ; gain = 672.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2303.176 ; gain = 672.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2303.176 ; gain = 672.133
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.370 . Memory (MB): peak = 2303.176 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/full_radio_v1_0_S00_AXI_inst/uut_fir_imag/uut_fir_1/U0'
+Finished Parsing XDC File [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/full_radio_v1_0_S00_AXI_inst/uut_fir_imag/uut_fir_1/U0'
+Parsing XDC File [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/full_radio_v1_0_S00_AXI_inst/uut_fir_real/uut_fir_1/U0'
+Finished Parsing XDC File [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/full_radio_v1_0_S00_AXI_inst/uut_fir_real/uut_fir_1/U0'
+Parsing XDC File [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_2/constraints/fir_compiler_v7_2.xdc] for cell 'U0/full_radio_v1_0_S00_AXI_inst/uut_fir_imag/uut_fir_2/U0'
+Finished Parsing XDC File [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_2/constraints/fir_compiler_v7_2.xdc] for cell 'U0/full_radio_v1_0_S00_AXI_inst/uut_fir_imag/uut_fir_2/U0'
+Parsing XDC File [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_2/constraints/fir_compiler_v7_2.xdc] for cell 'U0/full_radio_v1_0_S00_AXI_inst/uut_fir_real/uut_fir_2/U0'
+Finished Parsing XDC File [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_2/constraints/fir_compiler_v7_2.xdc] for cell 'U0/full_radio_v1_0_S00_AXI_inst/uut_fir_real/uut_fir_2/U0'
+Parsing XDC File [C:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_full_radio_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_full_radio_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2303.176 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.243 . Memory (MB): peak = 2303.176 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 2303.176 ; gain = 672.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 2303.176 ; gain = 672.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/uut_fir_imag/uut_fir_2/U0. (constraint file  C:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc, line 23).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/uut_fir_real/uut_fir_2/U0. (constraint file  C:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc, line 23).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/uut_fir_imag/uut_fir_1/U0. (constraint file  C:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc, line 26).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/uut_fir_real/uut_fir_1/U0. (constraint file  C:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc, line 26).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/uut_freq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/uut_tuner. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/uut_mixer. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/uut_fir_real/uut_fir_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/uut_fir_imag/uut_fir_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/uut_fir_real/uut_fir_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/uut_fir_imag/uut_fir_2. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 2303.176 ; gain = 672.133
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3971] The signal "dpt_mem:/gen_bram.gen_write_first.gen_double_reg.ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "dpt_mem__parameterized0:/gen_bram.gen_write_first.gen_double_reg.ram_reg" was recognized as a true dual port RAM template.
+WARNING: [Synth 8-327] inferring latch for variable 'counter_reg' [c:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/00d5/hdl/full_radio_v1_0_S00_AXI.vhd:426]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 2303.176 ; gain = 672.133
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'fir_compiler_v7_2_18__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[0].g_others.i_delay' (delay__parameterized29) to 'fir_compiler_v7_2_18__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[1].g_others.i_delay'
+INFO: [Synth 8-223] decloning instance 'fir_compiler_v7_2_18__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[4].g_others.i_delay' (delay__parameterized31) to 'fir_compiler_v7_2_18__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[5].g_others.i_delay'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3971] The signal "fir_compiler_v7_2_18__parameterized1:/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_packed.g_true_dual_port.i_mem /gen_bram.gen_write_first.gen_double_reg.ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "fir_compiler_v7_2_18__parameterized1:/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_packed.g_true_dual_port.i_mem /gen_bram.gen_write_first.gen_double_reg.ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 2303.176 ; gain = 672.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 2303.176 ; gain = 672.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:00 . Memory (MB): peak = 2303.176 ; gain = 672.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 2303.176 ; gain = 672.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2303.176 ; gain = 672.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2303.176 ; gain = 672.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2303.176 ; gain = 672.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2303.176 ; gain = 672.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2303.176 ; gain = 672.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2303.176 ; gain = 672.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------------------------+----------------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                   | DSP Mapping                                  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------------+----------------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|xbip_dsp48e1_wrapper_v3_0_117 | (C'+(A'*B')')'                               | 17     | 17     | 48     | -      | 48     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|xbip_dsp48e1_wrapper_v3_0_115 | (C'+(A'*B')')'                               | 30     | 18     | 48     | -      | 48     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|xbip_dsp48e1_wrapper_v3_0_96  | (C'+(A'*B')')'                               | 17     | 17     | 48     | -      | 48     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|xbip_dsp48e1_wrapper_v3_0_94  | (not(C'+(A'*B')'))'                          | 30     | 18     | 48     | -      | 48     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|xbip_dsp48e1_wrapper_v3_0     | (C'+(A'*B')')'                               | 30     | 18     | 48     | -      | 48     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|dsp                           | (not(C'+((D'+A'')'*B'')'))'                  | 25     | 18     | 48     | 0      | 43     | 2    | 2    | 2    | 2    | 1     | 1    | 1    | 
+|dsp__parameterized0           | (C+((D'+A')'*B'')')'                         | 25     | 18     | 0      | 25     | 43     | 1    | 2    | 2    | 2    | 1     | 1    | 1    | 
+|dsp__parameterized1           | (C'+((D'-A'')'*B'')')'                       | 25     | 18     | 48     | 0      | 43     | 2    | 2    | 2    | 2    | 1     | 1    | 1    | 
+|calc__parameterized0_81       | Dynamic                                      | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|calc_76                       | (PCIN+((D'+A')'*B')')'                       | 30     | 18     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_75                       | (PCIN+((D'+A')'*B')')'                       | 30     | 18     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_74                       | (C'+((Dynamically Configured Multiplier))')' | -      | -      | 0      | -      | 48     | -    | -    | 1    | -    | 1     | 1    | 1    | 
+|calc__parameterized3_46       | (C'+A':B')'                                  | 30     | 18     | 48     | -      | 48     | 1    | 1    | 1    | -    | -     | 0    | 1    | 
+|calc__parameterized1_44       | Dynamic                                      | -      | -      | -      | -      | 48     | -    | -    | -    | -    | 1     | 1    | 1    | 
+|calc__parameterized2_43       | Dynamic                                      | -      | -      | -      | -      | 48     | -    | -    | -    | -    | 1     | 1    | 1    | 
+|calc__parameterized0          | Dynamic                                      | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|calc_16                       | (PCIN+((D'+A')'*B')')'                       | 30     | 18     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_15                       | (PCIN+((D'+A')'*B')')'                       | 30     | 18     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc                          | (C'+((Dynamically Configured Multiplier))')' | -      | -      | 0      | -      | 48     | -    | -    | 1    | -    | 1     | 1    | 1    | 
+|calc__parameterized3          | (C'+A':B')'                                  | 30     | 18     | 48     | -      | 48     | 1    | 1    | 1    | -    | -     | 0    | 1    | 
+|calc__parameterized1          | Dynamic                                      | -      | -      | -      | -      | 48     | -    | -    | -    | -    | 1     | 1    | 1    | 
+|calc__parameterized2          | Dynamic                                      | -      | -      | -      | -      | 48     | -    | -    | -    | -    | 1     | 1    | 1    | 
++------------------------------+----------------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    40|
+|2     |DSP48E1   |    22|
+|7     |LUT1      |    36|
+|8     |LUT2      |   166|
+|9     |LUT3      |    95|
+|10    |LUT4      |   167|
+|11    |LUT5      |    78|
+|12    |LUT6      |   139|
+|13    |RAM128X1D |   106|
+|14    |RAMB18E1  |     6|
+|17    |RAMB36E1  |     2|
+|18    |SRL16E    |   253|
+|19    |SRLC32E   |   320|
+|20    |FDRE      |  2028|
+|21    |FDSE      |    23|
+|22    |LD        |    32|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2303.176 ; gain = 672.133
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 176 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:59 . Memory (MB): peak = 2303.176 ; gain = 672.133
+Synthesis Optimization Complete : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2303.176 ; gain = 672.133
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.113 . Memory (MB): peak = 2303.176 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 208 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2303.176 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 138 instances were transformed.
+  LD => LDCE: 32 instances
+  RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 106 instances
+
+Synth Design complete, checksum: 617e2a25
+INFO: [Common 17-83] Releasing license: Synthesis
+62 Infos, 121 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:10 ; elapsed = 00:01:11 . Memory (MB): peak = 2303.176 ; gain = 672.133
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint 'C:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/design_1_full_radio_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_full_radio_0_0, cache-ID = eb2e73e4f49d62d2
+INFO: [Coretcl 2-1174] Renamed 250 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/design_1_full_radio_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_full_radio_0_0_utilization_synth.rpt -pb design_1_full_radio_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 10 01:19:52 2023...

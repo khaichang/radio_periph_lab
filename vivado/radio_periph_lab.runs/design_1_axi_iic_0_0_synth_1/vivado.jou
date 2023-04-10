@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sat Apr  8 22:52:03 2023
+# Process ID: 4104
+# Current directory: C:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.runs/design_1_axi_iic_0_0_synth_1
+# Command line: vivado.exe -log design_1_axi_iic_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_iic_0_0.tcl
+# Log file: C:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.runs/design_1_axi_iic_0_0_synth_1/design_1_axi_iic_0_0.vds
+# Journal file: C:/zybo_project/Lab6/radio_periph_lab/vivado/radio_periph_lab.runs/design_1_axi_iic_0_0_synth_1\vivado.jou
+# Running On: MasterPC, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 8, Host memory: 34274 MB
+#-----------------------------------------------------------
+source design_1_axi_iic_0_0.tcl -notrace
